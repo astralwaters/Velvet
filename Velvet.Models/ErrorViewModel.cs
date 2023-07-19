@@ -1,4 +1,4 @@
-namespace VelvetWeb.Models
+namespace Velvet.Models
 {
     public class ErrorViewModel
     {

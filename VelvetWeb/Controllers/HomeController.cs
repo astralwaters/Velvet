@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using VelvetWeb.Models;
+using Velvet.Models;
 
 namespace VelvetWeb.Controllers
 {

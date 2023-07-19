@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using VelvetWeb.Data;
-using VelvetWeb.Models;
+using Velvet.Models;
+using VelvetWeb.DataAccess;
 
 namespace VelvetWeb.Controllers
 {

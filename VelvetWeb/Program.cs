@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using VelvetWeb.Data;
+using VelvetWeb.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
