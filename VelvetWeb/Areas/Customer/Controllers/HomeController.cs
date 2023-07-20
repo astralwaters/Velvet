@@ -2,8 +2,9 @@
 using System.Diagnostics;
 using Velvet.Models;
 
-namespace VelvetWeb.Controllers
+namespace VelvetWeb.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
