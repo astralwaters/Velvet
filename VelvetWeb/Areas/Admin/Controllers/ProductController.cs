@@ -22,8 +22,7 @@ namespace VelvetWeb.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<CoverType> objCoverTypeList = _unitOfWork.CoverType.GetAll();
-            return View(objCoverTypeList);
+           return View();
         }
 
 
@@ -129,5 +128,15 @@ namespace VelvetWeb.Areas.Admin.Controllers
 
         }
 
+        #region API Calls
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var productList = _unitOfWork.Product.GetAll();
+            return Json(new { data = productList });
+        }
+
+        #endregion
     }
 }
