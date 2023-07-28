@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Velvet.DataAccess\Velvet.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
+  </ItemGroup>
+
 </Project>
