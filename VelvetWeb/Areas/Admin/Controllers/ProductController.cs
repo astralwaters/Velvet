@@ -47,6 +47,7 @@ namespace VelvetWeb.Areas.Admin.Controllers
             {
                 //create product
                 ViewBag.CategoryList = CategoryList;
+                ViewData["CoverTypeList"] = CoverTypeList;
                 return View(product);
             }
             else
