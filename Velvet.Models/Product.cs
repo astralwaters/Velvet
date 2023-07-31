@@ -18,18 +18,22 @@ namespace Velvet.Models
         public string Description { get; set; }
         [Required]
         [Range(1,10000)]
+        [Display(Name = "List Price")]
         public double ListPrice { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name = "Price")]
         public double Price { get; set; }
         [ValidateNever]
         public string ImageUrl { get; set; }
-        [Required]        
+        [Required]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
         [Required]
+        [Display(Name ="Cover Type")]
         public int CoverTypeId { get; set; }
         [ValidateNever]
         public CoverType CoverType { get; set; }
